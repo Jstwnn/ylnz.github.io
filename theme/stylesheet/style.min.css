@@ -9,27 +9,27 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 h1 {
-	font-size: 2em
+	font-size: 1.36em /*relex-ylnz*/
 }
 
 h2 {
-	font-size: 1.6em
-}
-
-h3 {
-	font-size: 1.36em
-}
-
-h4 {
 	font-size: 1.2em
 }
 
-h5 {
+h3 {
 	font-size: 1.1em
 }
 
-h6 {
+h4 {
 	font-size: 1.0em
+}
+
+h5 {
+	font-size: 0.9em
+}
+
+h6 {
+	font-size: 0.8em
 }
 
 body {
@@ -38,7 +38,7 @@ body {
 	background-color: #fff;
 	color: #242121;
 	font-family: Source Sans Pro,Verdana,sans-serif;
-	font-size: 1.12em;
+	font-size: 0.9em; /*relex-ylnz*/
 	line-height: 1.2em
 }
 
@@ -66,7 +66,8 @@ img {
 
 aside {
 	background-color: #333;
-	text-align: center
+	text-align: center;
+	font-size: 1.0em  /*relex-ylnz*/
 }
 
 aside,aside a {
@@ -93,10 +94,10 @@ aside div h1 {
 
 aside div p {
 	margin: 0 0 15px;
-	font-size: .92em
+	font-size: .9em
 }
 
-aside div hr { 
+aside div hr {  /*relex-ylnz*/
 	background-color: transparent;
     height: 0px;
 	width: 80%;
@@ -108,7 +109,7 @@ aside div hr {
 aside nav ul li {
 	display: inline;
 	line-height: 1.6em;
-	font-size: 1.28em;
+	font-size: 1.1em;
 	text-transform: none;
 }
 
@@ -166,7 +167,7 @@ main article blockquote,main article pre {
 main article blockquote {
 	padding: 10px 20px;
 	font-weight: 300;
-	font-size: 1.1em
+	font-size: .96em /*relex-ylnz*/
 }
 
 main article pre {
@@ -219,7 +220,7 @@ main article table thead:first-child tr:first-child th {
 
 main article table td,main article table th {
 	padding: 8px;
-	line-height: 20px;
+	line-height: 10px; /*relex-ylnz*/
 	vertical-align: top;
 	border-top: 1px solid #ddd
 }

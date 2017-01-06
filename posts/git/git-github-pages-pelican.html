@@ -120,7 +120,7 @@
 <dl class="docutils">
 <dt>Install pip</dt>
 <dd><ul class="first simple">
-<li>wget <a class="reference external" href="https://raw.github.com/pypa/pip/master/contrib/get-pip.py">https://raw.github.com/pypa/pip/master/contrib/get-pip.py</a> <a class="footnote-reference" href="#id3" id="id1">[1]</a></li>
+<li>wget <a class="reference external" href="https://raw.github.com/pypa/pip/master/contrib/get-pip.py">https://raw.github.com/pypa/pip/master/contrib/get-pip.py</a> <a class="footnote-reference" href="#id5" id="id1">[1]</a></li>
 <li>python get-pip.py</li>
 </ul>
 <div class="last line-block">
@@ -202,7 +202,7 @@ Done. Your new project is available at &lt;Your Path&gt;
 </dd>
 <dt>Get the pelican-themes:</dt>
 <dd><ul class="first last simple">
-<li>git clone <a class="reference external" href="https://github.com/getpelican/pelican-themes.git">https://github.com/getpelican/pelican-themes.git</a> <a class="footnote-reference" href="#id4" id="id2">[2]</a></li>
+<li>git clone <a class="reference external" href="https://github.com/getpelican/pelican-themes.git">https://github.com/getpelican/pelican-themes.git</a> <a class="footnote-reference" href="#id6" id="id2">[2]</a></li>
 </ul>
 </dd>
 </dl>
@@ -283,17 +283,51 @@ git pull origin master
 git commit -m '1st commit'
 git push origin master
 </pre>
-<p>Once finished, access '<a class="reference external" href="http:/">http:/</a>/&lt;your-github-name&gt;.github.io'</p>
-<table class="docutils footnote" frame="void" id="id3" rules="none">
+<p>Once finished, access '<a class="reference external" href="http://YOUR-USERNAME.github.io">http://YOUR-USERNAME.github.io</a>'</p>
+</div>
+<div class="section" id="apex-domain-binding">
+<h2>5. Apex Domain Binding</h2>
+<p>To enable the apex domain(such as www.example.com or example.com), here for example I use 'gitcc.cc'.</p>
+<ul class="simple">
+<li>Check the IP address for your github pages via <strong>dig</strong> cmd:</li>
+</ul>
+<pre class="literal-block">
+# dig YOUR-USERNAME.github.io +noall +answer
+...
+xxxxxx.github.io.       3600    IN      CNAME   github.map.fastly.net.
+github.map.fastly.net.  30      IN      A       151.101.xx.xxx
+</pre>
+<ul>
+<li><p class="first">Create an 'A' record on your DNS provider's control board to points to the GitHub Pages server <a class="footnote-reference" href="#id7" id="id3">[3]</a>.</p>
+<p>Simply refer to Github Pages' official guide:
+Under your repository name, click <strong>Settings</strong>, Under <strong>&quot;Custom domain&quot;</strong>, add or remove your custom domain and click <strong>Save</strong> <a class="footnote-reference" href="#id8" id="id4">[4]</a>.</p>
+</li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<table class="docutils footnote" frame="void" id="id5" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
 <tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td><a class="reference external" href="http://pip-cn.readthedocs.io/en/latest/installing.html">http://pip-cn.readthedocs.io/en/latest/installing.html</a></td></tr>
 </tbody>
 </table>
-<table class="docutils footnote" frame="void" id="id4" rules="none">
+<table class="docutils footnote" frame="void" id="id6" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
 <tr><td class="label"><a class="fn-backref" href="#id2">[2]</a></td><td><a class="reference external" href="http://pelicanthemes.com">http://pelicanthemes.com</a></td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id7" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id3">[3]</a></td><td><a class="reference external" href="https://help.github.com/articles/setting-up-an-apex-domain/">https://help.github.com/articles/setting-up-an-apex-domain/</a></td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id8" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id4">[4]</a></td><td><a class="reference external" href="https://help.github.com/articles/adding-or-removing-a-custom-domain-for-your-github-pages-site/">https://help.github.com/articles/adding-or-removing-a-custom-domain-for-your-github-pages-site/</a></td></tr>
 </tbody>
 </table>
 </div>
