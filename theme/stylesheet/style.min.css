@@ -405,6 +405,34 @@ ul.social a.sc-soundcloud {
 	margin-left: 5%
 }
 
+/* Style for rst - ylnz */
+
+.red {
+    color:red;
+}
+.silver {
+    color:silver;
+}
+.gray {
+    color:gray;
+}
+.darkgray {
+    color:darkgray;
+}
+.darkcyan {
+    color:darkcyan;
+}
+.tomato {
+    color:tomato;
+}
+.comment_red {
+	color:#d9411e;
+}
+.comment_black {
+	color:#000000;
+}
+/* ------------------- */
+
 @media screen and (min-width:768px) {
 	aside {
 		width: 25%;

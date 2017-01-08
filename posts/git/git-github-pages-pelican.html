@@ -24,7 +24,7 @@
 
 <meta name="author" content="ylnz" />
 <meta name="description" content="0. Pre-knowledge. Git/Github/Github Pages Python/Pip/Pelican Markdown/reStructuredText 1. Installation. Install pip wget https://raw.github.com/pypa/pip/master/contrib/get-pip.py [1] python get-pip.py If needed, upgrade 'pip': python -m pip install --upgrade pip Install pelican pip install pelican 2. Pelican-Quickstart. Create the root …" />
-<meta name="keywords" content="Github">
+<meta name="keywords" content="Github Pages, Pelican, reStructuredText">
 <meta property="og:site_name" content="Anything-Is-Possible"/>
 <meta property="og:title" content="Build Github Pages with Pelican"/>
 <meta property="og:description" content="0. Pre-knowledge. Git/Github/Github Pages Python/Pip/Pelican Markdown/reStructuredText 1. Installation. Install pip wget https://raw.github.com/pypa/pip/master/contrib/get-pip.py [1] python get-pip.py If needed, upgrade 'pip': python -m pip install --upgrade pip Install pelican pip install pelican 2. Pelican-Quickstart. Create the root …"/>
@@ -35,7 +35,9 @@
 <meta property="article:modified_time" content="2017-01-01 00:00:00+08:00"/>
 <meta property="article:author" content="/author/ylnz.html">
 <meta property="article:section" content="Git"/>
-<meta property="article:tag" content="Github"/>
+<meta property="article:tag" content="Github Pages"/>
+<meta property="article:tag" content="Pelican"/>
+<meta property="article:tag" content="reStructuredText"/>
 <meta property="og:image" content="">
 
   <title>Anything-Is-Possible &ndash; Build Github Pages with Pelican</title>
@@ -269,13 +271,16 @@ Anything is possible if you try hard enough.
 </ul>
 </dd>
 </dl>
-<p>Now, open your web browser, locate '<a class="reference external" href="http://localhost:8000">http://localhost:8000</a>'</p>
+<p>Now, open your web browser, access '<a class="reference external" href="http://localhost:8000">http://localhost:8000</a>'</p>
 </div>
 <div class="section" id="publish-to-github">
 <h2>4. Publish to Github</h2>
-<p>Create the repo on Github with name '&lt;your-github-name&gt;.github.io'</p>
-<p>cd ./blog/output/</p>
-<pre class="literal-block">
+<dl class="docutils">
+<dt>Create the repo on Github with name '&lt;your-github-name&gt;.github.io'</dt>
+<dd><ul class="first simple">
+<li>cd ./blog/output/</li>
+</ul>
+<pre class="last literal-block">
 git init
 git add .
 git remote add origin https://github.com/JustWanna/justwanna.github.io
@@ -283,12 +288,15 @@ git pull origin master
 git commit -m '1st commit'
 git push origin master
 </pre>
+</dd>
+</dl>
 <p>Once finished, access '<a class="reference external" href="http://YOUR-USERNAME.github.io">http://YOUR-USERNAME.github.io</a>'</p>
 </div>
 <div class="section" id="apex-domain-binding">
 <h2>5. Apex Domain Binding</h2>
-<p>To enable the apex domain(such as www.example.com or example.com), here for example I use 'gitcc.cc'.</p>
-<ul class="simple">
+<dl class="docutils">
+<dt>To enable the apex domain(such as www.example.com or example.com), here for example I use 'gitcc.cc'.</dt>
+<dd><ul class="first simple">
 <li>Check the IP address for your github pages via <strong>dig</strong> cmd:</li>
 </ul>
 <pre class="literal-block">
@@ -297,13 +305,15 @@ git push origin master
 xxxxxx.github.io.       3600    IN      CNAME   github.map.fastly.net.
 github.map.fastly.net.  30      IN      A       151.101.xx.xxx
 </pre>
-<ul>
-<li><p class="first">Create an 'A' record on your DNS provider's control board to points to the GitHub Pages server <a class="footnote-reference" href="#id7" id="id3">[3]</a>.</p>
-<p>Simply refer to Github Pages' official guide:</p>
-<p>Under your repository name, click <strong>Settings</strong>, Under <strong>&quot;Custom domain&quot;</strong>, add or remove your custom domain and click <strong>Save</strong> <a class="footnote-reference" href="#id8" id="id4">[4]</a>.</p>
-<p>Which equals create a CNAME file with only one line content &lt;YOUR-DOMAIN&gt;.</p>
-</li>
+<ul class="last simple">
+<li>Create an 'A' record on your DNS provider's control board to points to the GitHub Pages server <a class="footnote-reference" href="#id7" id="id3">[3]</a>.</li>
 </ul>
+</dd>
+</dl>
+<p>Simply refer to Github Pages' official guide:</p>
+<blockquote>
+Under your repository name, click <strong>Settings</strong>, Under <strong>&quot;Custom domain&quot;</strong>, add or remove your custom domain and click <strong>Save</strong> <a class="footnote-reference" href="#id8" id="id4">[4]</a>.</blockquote>
+<p>Which equals create a CNAME file with only one line content &lt;YOUR-DOMAIN&gt;.</p>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -336,7 +346,9 @@ github.map.fastly.net.  30      IN      A       151.101.xx.xxx
   </div>
   <div class="tag-cloud">
     <p>
-      <a href="/tag/github.html">Github</a>
+      <a href="/tag/github-pages.html">Github Pages</a>
+      <a href="/tag/pelican.html">Pelican</a>
+      <a href="/tag/restructuredtext.html">reStructuredText</a>
     </p>
   </div>
 

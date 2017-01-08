@@ -90,75 +90,28 @@
 
 <article>
   <header>
-    <h2><a href="/posts/git/git-usage.html#git-usage">Git Usage - Stub</a></h2>
+    <h2><a href="/posts/git/github-repo-management.html#github-repo-management">GitHub Repository management via REST-API/SSH-key</a></h2>
     <p>
-          Posted on 周一 02 一月 2017 in <a href="/category/git.html">Git</a>
+          Posted on 周六 07 一月 2017 in <a href="/category/git.html">Git</a>
 
 
           &#8226;     Tagged with
 
-              <a href="/tag/github.html">Github</a>
+              <a href="/tag/github.html">Github</a>,              <a href="/tag/git.html">Git</a>
     </p>
   </header>
   <div>
-      <p>Placeholder</p>
-
-      <br>
-      <a class="btn" href="/posts/git/git-usage.html#git-usage">    Continue reading
-</a>
-  </div>
-  <hr />
-</article>
-<article>
-  <header>
-    <h2><a href="/posts/git/git-github-pages-pelican.html#git-github-pages-pelican">Build Github Pages with Pelican</a></h2>
-    <p>
-          Posted on 周日 01 一月 2017 in <a href="/category/git.html">Git</a>
-
-
-          &#8226;     Tagged with
-
-              <a href="/tag/github.html">Github</a>
-    </p>
-  </header>
-  <div>
-      <div class="section" id="pre-knowledge">
-<h2>0. Pre-knowledge.</h2>
+      <p>GitHub provides powerful REST API to support repo(s) management. <a class="footnote-reference" href="#id2" id="id1">[1]</a></p>
 <blockquote>
-<ul class="simple">
-<li>Git/Github/Github Pages</li>
-<li>Python/Pip/Pelican</li>
-<li>Markdown/reStructuredText</li>
-</ul>
-</blockquote>
-</div>
-<div class="section" id="installation">
-<h2>1. Installation.</h2>
-<dl class="docutils">
-<dt>Install pip</dt>
-<dd><ul class="first simple">
-<li>wget <a class="reference external" href="https://raw.github.com/pypa/pip/master/contrib/get-pip.py">https://raw.github.com/pypa/pip/master/contrib/get-pip.py</a> <a class="footnote-reference" href="#id5" id="id1">[1]</a></li>
-<li>python get-pip.py</li>
-</ul>
-<div class="last line-block">
-<div class="line">If needed, upgrade 'pip':</div>
-<div class="line">python -m pip install --upgrade pip</div>
-<div class="line"><br /></div>
-</div>
-</dd>
-<dt>Install pelican</dt>
-<dd><ul class="first last simple">
-<li>pip install pelican</li>
-</ul>
-</dd>
-</dl>
-</div>
-<div class="section" id="pelican-quickstart">
-<h2>2. Pelican-Quickstart.</h2>
-<dl class="docutils">
-<dt>Create the root …</dt></dl></div>
+All API access is over HTTPS, and accessed from the <a class="reference external" href="https://api.github.com">https://api.github.com</a>. All data is sent and received as JSON.</blockquote>
+<div class="section" id="create-repository">
+<h2>1. Create Repository</h2>
+<ul>
+<li><p class="first">By reference to the official API guide, create the new repo:</p>
+<pre class="literal-block">
+# curl -u 'YOUR-GitHub …</pre></li></ul></div>
       <br>
-      <a class="btn" href="/posts/git/git-github-pages-pelican.html#git-github-pages-pelican">    Continue reading
+      <a class="btn" href="/posts/git/github-repo-management.html#github-repo-management">    Continue reading
 </a>
   </div>
 </article>
